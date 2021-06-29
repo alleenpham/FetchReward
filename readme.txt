@@ -18,7 +18,7 @@ RESTful Microservices API:
 How to run the application - Server.port: 8085
 ===================================================================================
 1) Import Maven 'FetchReward' project into Eclipse or Spring Tool Suite IDE
-2) Run com.fetchreward.controller.FetchrewardPayerPointApplication as SpringBoot application
+2) Run com.fetchreward.FetchrewardPayerPointApplication as SpringBoot application
 ===================================================================================
 Unit Test:
 Testing Tool used for front-controller: Postman

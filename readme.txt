@@ -15,7 +15,14 @@ RESTful Microservices API:
    GET  /getPayerBalance
    GET  /spendPoints
 ===================================================================================
+How to run the application - Server.port: 8085
+===================================================================================
+1) Import Maven 'FetchReward' project into Eclipse or Spring Tool Suite IDE
+2) Run com.fetchreward.controller.FetchrewardPayerPointApplication as SpringBoot application
+===================================================================================
 Unit Test:
+Testing Tool used for front-controller: Postman
+===================================================================================
  1) Calling http://localhost:8085/savePointTransaction to save (payer/point)
    Below are (payer/points) will be added into the resource by calling microservice "http://localhost:8085/savePointTransaction"
    { "payer": "DANNON", "points": 1000, "timestamp": "2020-11-02T14:00:00Z" }
@@ -28,12 +35,3 @@ Unit Test:
     and verify point reduction rule (reduct points based on timestamp in order oldest to newer).
  4) Calling http://localhost:8085/getPayerBalance to verfiy (payer/points) after points reduction.
  Note: Response and result (see TestPlanAdResult.xlxs)
-===================================================================================
-Server.port: 8085
-Testing Tool used for front-controller: Postman
-===================================================================================
-How to run the application
-===================================================================================
-Use Eclipse or Spring Tool Suite to run com.fetchreward.controller.FetchrewardPayerPointApplication as SpringBoot application
-
- 
